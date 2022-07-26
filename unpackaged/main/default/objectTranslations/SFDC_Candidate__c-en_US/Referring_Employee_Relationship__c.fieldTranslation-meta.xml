@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Referring Employee Relationship --></label>
+        <name>Referring_Employee_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Business contact</masterLabel>
+            <translation><!-- Business contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former co-worker</masterLabel>
+            <translation><!-- Former co-worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friend</masterLabel>
+            <translation><!-- Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relative</masterLabel>
+            <translation><!-- Relative --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

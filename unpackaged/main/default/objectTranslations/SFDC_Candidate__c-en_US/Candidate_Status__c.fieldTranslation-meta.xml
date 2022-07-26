@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Candidate Status --></label>
+        <name>Candidate_Status__c</name>
+        <picklistValues>
+            <masterLabel>Back Burner</masterLabel>
+            <translation><!-- Back Burner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candidate not interested - Compensation</masterLabel>
+            <translation><!-- Candidate not interested - Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candidate not interested - Location</masterLabel>
+            <translation><!-- Candidate not interested - Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candidate not interested - Took another job</masterLabel>
+            <translation><!-- Candidate not interested - Took another job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consider for future role</masterLabel>
+            <translation><!-- Consider for future role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Resigned</masterLabel>
+            <translation><!-- Employee Resigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation - Hiring Manager</masterLabel>
+            <translation><!-- Evaluation - Hiring Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Round Interview/Presentation</masterLabel>
+            <translation><!-- Final Round Interview/Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hired- Consultant</masterLabel>
+            <translation><!-- Hired- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hired- Employee</masterLabel>
+            <translation><!-- Hired- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interview - Request</masterLabel>
+            <translation><!-- Interview - Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interview - Scheduled</masterLabel>
+            <translation><!-- Interview - Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Interest</masterLabel>
+            <translation><!-- Lost Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No position available</masterLabel>
+            <translation><!-- No position available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer - Accepted</masterLabel>
+            <translation><!-- Offer - Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer - Declined</masterLabel>
+            <translation><!-- Offer - Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer - Request</masterLabel>
+            <translation><!-- Offer - Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer - Sent</masterLabel>
+            <translation><!-- Offer - Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer - negotiation</masterLabel>
+            <translation><!-- Offer - negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Declined - Commute</masterLabel>
+            <translation><!-- Offer Declined - Commute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Declined - Comp</masterLabel>
+            <translation><!-- Offer Declined - Comp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Declined - Counter Offer</masterLabel>
+            <translation><!-- Offer Declined - Counter Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Declined - MISC</masterLabel>
+            <translation><!-- Offer Declined - MISC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Declined - Other opp</masterLabel>
+            <translation><!-- Offer Declined - Other opp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Screen - On the fence</masterLabel>
+            <translation><!-- Phone Screen - On the fence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Screen - Request</masterLabel>
+            <translation><!-- Phone Screen - Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Screen - Scheduled</masterLabel>
+            <translation><!-- Phone Screen - Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionnaire - Request</masterLabel>
+            <translation><!-- Questionnaire - Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionnaire - Review</masterLabel>
+            <translation><!-- Questionnaire - Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionnaire - Sent</masterLabel>
+            <translation><!-- Questionnaire - Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionnaire - Sent 2nd Time</masterLabel>
+            <translation><!-- Questionnaire - Sent 2nd Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review - Hiring Manager</masterLabel>
+            <translation><!-- Review - Hiring Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review - Recruiting</masterLabel>
+            <translation><!-- Review - Recruiting --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sr_Qaulity_Assurance_Engineer</fullName>
+    <columns>NAME</columns>
+    <columns>Application_Status__c</columns>
+    <columns>Position__c</columns>
+    <columns>Target_Hourly_Rate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Position__c</field>
+        <operation>equals</operation>
+        <value>Sr. Quality Assurance Engineer</value>
+    </filters>
+    <label>Sr. Qaulity Assurance Engineer</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Applicants__c</fullName>
+    <externalId>false</externalId>
+    <label>No. of Applicants</label>
+    <summaryForeignKey>SFDC_Job_Candidate__c.SFDC_Job__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

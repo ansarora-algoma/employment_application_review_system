@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="font-family: arial; font-size: 12pt;">Hi&nbsp;{!SFDC_Candidate__c.Name</span><font face="arial"><span style="font-size: 12pt;">},</span></font><div style="font-family: arial; font-size: 12pt;"><br></div><div style="font-family: arial; font-size: 12pt;">We have received your application for a position.</div><div style="font-family: arial; font-size: 12pt;"><br></div><div style="font-family: arial; font-size: 12pt;">Thank you for your interest in Algoma University! We are currently in the middle of our recruitment process and initial screening should be completed soon. We will keep you informed throughout the process.</div><div style="font-family: arial; font-size: 12pt;"><br></div><div style="font-family: arial; font-size: 12pt;">Thank you!</div><div style="font-family: arial; font-size: 12pt;">AlgomaU recruitment team.</div><div style="font-family: arial; font-size: 12pt;"><br></div>]]></td>
+</tr>
+</table>

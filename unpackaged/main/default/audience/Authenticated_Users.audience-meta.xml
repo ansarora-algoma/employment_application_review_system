@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Authenticated Users</audienceName>
+    <container>Employment Application Review System</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>UserRole.Name</entityField>
+                <entityType>User</entityType>
+                <fieldValue>School of Computer Science and Technology Partner User</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>3f49d365-0585-4205-99b2-5bcc016a9a59$#$7f46f461-d235-43f4-837e-808620d5d5c0</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_HTML_Editor_3_Component</targetValue>
+        </target>
+        <target>
+            <groupName>c74896a6-bdbc-4ce6-8031-cf1cc3c96cb4$#$7965067f-15a7-48a9-a20b-4d80ca6223d3</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>3f49d365-0585-4205-99b2-5bcc016a9a59$#$ddeca3cb-c696-4451-955d-3147909178e2</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_HTML_Editor_Component</targetValue>
+        </target>
+        <target>
+            <groupName>6c0f57f5-dd03-48f9-b44b-3aba76c27263$#$54d31291-f029-4770-b0b6-dd4f0ee28d32</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Default_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>c74896a6-bdbc-4ce6-8031-cf1cc3c96cb4$#$17525b2c-e995-42a8-a3eb-d382cb8c2344</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Customizable_User_Profile_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>004cd1b5-da24-41c1-931d-af81af3a1fa9$#$bfe56263-50eb-41d7-b469-e404e0e1e86e</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Report_Detail_Report_Summary_Component</targetValue>
+        </target>
+        <target>
+            <groupName>20991636-babd-4f88-a4b9-9403a93a86d0</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Report_Detail_Report_Detail_Page</targetValue>
+        </target>
+    </targets>
+</Audience>

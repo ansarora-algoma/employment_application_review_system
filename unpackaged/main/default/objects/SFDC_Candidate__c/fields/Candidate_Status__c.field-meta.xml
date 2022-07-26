@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidate_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Candidate Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Back Burner</fullName>
+                <default>false</default>
+                <label>Back Burner</label>
+            </value>
+            <value>
+                <fullName>Candidate not interested - Compensation</fullName>
+                <default>false</default>
+                <label>Candidate not interested - Compensation</label>
+            </value>
+            <value>
+                <fullName>Candidate not interested - Location</fullName>
+                <default>false</default>
+                <label>Candidate not interested - Location</label>
+            </value>
+            <value>
+                <fullName>Candidate not interested - Took another job</fullName>
+                <default>false</default>
+                <label>Candidate not interested - Took another job</label>
+            </value>
+            <value>
+                <fullName>Consider for future role</fullName>
+                <default>false</default>
+                <label>Consider for future role</label>
+            </value>
+            <value>
+                <fullName>Employee Resigned</fullName>
+                <default>false</default>
+                <label>Employee Resigned</label>
+            </value>
+            <value>
+                <fullName>Evaluation - Hiring Manager</fullName>
+                <default>false</default>
+                <label>Evaluation - Hiring Manager</label>
+            </value>
+            <value>
+                <fullName>Final Round Interview/Presentation</fullName>
+                <default>false</default>
+                <label>Final Round Interview/Presentation</label>
+            </value>
+            <value>
+                <fullName>Hired- Consultant</fullName>
+                <default>false</default>
+                <label>Hired- Consultant</label>
+            </value>
+            <value>
+                <fullName>Hired- Employee</fullName>
+                <default>false</default>
+                <label>Hired- Employee</label>
+            </value>
+            <value>
+                <fullName>Interview - Request</fullName>
+                <default>false</default>
+                <label>Interview - Request</label>
+            </value>
+            <value>
+                <fullName>Interview - Scheduled</fullName>
+                <default>false</default>
+                <label>Interview - Scheduled</label>
+            </value>
+            <value>
+                <fullName>Lost Interest</fullName>
+                <default>false</default>
+                <label>Lost Interest</label>
+            </value>
+            <value>
+                <fullName>No position available</fullName>
+                <default>false</default>
+                <label>No position available</label>
+            </value>
+            <value>
+                <fullName>Offer - Accepted</fullName>
+                <default>false</default>
+                <label>Offer - Accepted</label>
+            </value>
+            <value>
+                <fullName>Offer - Declined</fullName>
+                <default>false</default>
+                <label>Offer - Declined</label>
+            </value>
+            <value>
+                <fullName>Offer Declined - Commute</fullName>
+                <default>false</default>
+                <label>Offer Declined - Commute</label>
+            </value>
+            <value>
+                <fullName>Offer Declined - Comp</fullName>
+                <default>false</default>
+                <label>Offer Declined - Comp</label>
+            </value>
+            <value>
+                <fullName>Offer Declined - Counter Offer</fullName>
+                <default>false</default>
+                <label>Offer Declined - Counter Offer</label>
+            </value>
+            <value>
+                <fullName>Offer Declined - MISC</fullName>
+                <default>false</default>
+                <label>Offer Declined - MISC</label>
+            </value>
+            <value>
+                <fullName>Offer Declined - Other opp</fullName>
+                <default>false</default>
+                <label>Offer Declined - Other opp</label>
+            </value>
+            <value>
+                <fullName>Offer - negotiation</fullName>
+                <default>false</default>
+                <label>Offer - negotiation</label>
+            </value>
+            <value>
+                <fullName>Offer - Request</fullName>
+                <default>false</default>
+                <label>Offer - Request</label>
+            </value>
+            <value>
+                <fullName>Offer - Sent</fullName>
+                <default>false</default>
+                <label>Offer - Sent</label>
+            </value>
+            <value>
+                <fullName>Phone Screen - On the fence</fullName>
+                <default>false</default>
+                <label>Phone Screen - On the fence</label>
+            </value>
+            <value>
+                <fullName>Phone Screen - Request</fullName>
+                <default>false</default>
+                <label>Phone Screen - Request</label>
+            </value>
+            <value>
+                <fullName>Phone Screen - Scheduled</fullName>
+                <default>false</default>
+                <label>Phone Screen - Scheduled</label>
+            </value>
+            <value>
+                <fullName>Questionnaire - Request</fullName>
+                <default>false</default>
+                <label>Questionnaire - Request</label>
+            </value>
+            <value>
+                <fullName>Questionnaire - Review</fullName>
+                <default>false</default>
+                <label>Questionnaire - Review</label>
+            </value>
+            <value>
+                <fullName>Questionnaire - Sent</fullName>
+                <default>false</default>
+                <label>Questionnaire - Sent</label>
+            </value>
+            <value>
+                <fullName>Questionnaire - Sent 2nd Time</fullName>
+                <default>false</default>
+                <label>Questionnaire - Sent 2nd Time</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Review - Hiring Manager</fullName>
+                <default>false</default>
+                <label>Review - Hiring Manager</label>
+            </value>
+            <value>
+                <fullName>Review - Recruiting</fullName>
+                <default>false</default>
+                <label>Review - Recruiting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

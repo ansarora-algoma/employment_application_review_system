@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Job Location --></label>
+        <name>Job_Location__c</name>
+        <picklistValues>
+            <masterLabel>Main Office</masterLabel>
+            <translation><!-- Main Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote</masterLabel>
+            <translation><!-- Remote --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

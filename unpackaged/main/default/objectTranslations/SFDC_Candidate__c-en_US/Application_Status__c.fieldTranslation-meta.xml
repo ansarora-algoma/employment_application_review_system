@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Application Status --></label>
+        <name>Application_Status__c</name>
+        <picklistValues>
+            <masterLabel>Background Check</masterLabel>
+            <translation><!-- Background Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation</masterLabel>
+            <translation><!-- Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Accepted</masterLabel>
+            <translation><!-- Offer Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Declined</masterLabel>
+            <translation><!-- Offer Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Released</masterLabel>
+            <translation><!-- Offer Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Assessment Test</masterLabel>
+            <translation><!-- Online Assessment Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passive Candidate</masterLabel>
+            <translation><!-- Passive Candidate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Interview #1</masterLabel>
+            <translation><!-- Phone Interview #1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Interview #2</masterLabel>
+            <translation><!-- Phone Interview #2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Screen</masterLabel>
+            <translation><!-- Pre-Screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference Check</masterLabel>
+            <translation><!-- Reference Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>References Provided</masterLabel>
+            <translation><!-- References Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screened-In</masterLabel>
+            <translation><!-- Screened-In --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

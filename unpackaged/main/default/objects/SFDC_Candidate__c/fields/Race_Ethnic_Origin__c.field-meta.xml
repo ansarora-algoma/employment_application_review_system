@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Race_Ethnic_Origin__c</fullName>
+    <externalId>false</externalId>
+    <label>Race_Ethnic Origin</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>American Indian or Alaskan Native</fullName>
+                <default>false</default>
+                <label>American Indian or Alaskan Native</label>
+            </value>
+            <value>
+                <fullName>Asian</fullName>
+                <default>false</default>
+                <label>Asian</label>
+            </value>
+            <value>
+                <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+                <default>false</default>
+                <label>Native Hawaiian or Other Pacific Islander</label>
+            </value>
+            <value>
+                <fullName>African American</fullName>
+                <default>false</default>
+                <label>African American</label>
+            </value>
+            <value>
+                <fullName>Hispanic</fullName>
+                <default>false</default>
+                <label>Hispanic</label>
+            </value>
+            <value>
+                <fullName>Caucasian</fullName>
+                <default>false</default>
+                <label>Caucasian</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>I do not wish to complete questionnaire</fullName>
+                <default>false</default>
+                <label>I do not wish to complete questionnaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

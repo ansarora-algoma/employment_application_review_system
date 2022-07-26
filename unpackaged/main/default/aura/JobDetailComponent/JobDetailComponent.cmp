@@ -1,0 +1,131 @@
+<aura:component controller="JobListingController"
+                implements="forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" access="global">
+    
+    <!-- Attributes -->
+    <aura:attribute name="jobId" type="String"/>
+    <aura:attribute name="jobApplication" type="Object"/>
+    <aura:attribute name="candidate" type="SFDC_Candidate__c" default="{'attributes':{'type':'SFDC_Candidate__c'}}"/>
+    <aura:attribute name="showJobDetail" type="Boolean" default="true"/>
+    <aura:attribute name="fileName" type="String" default="No File Selected.."/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{! this }" action="{! c.init }" />
+    <!--<aura:handler event="aura:doneWaiting" action="{! c.hideSpinner }" />-->
+    
+    <aura:if isTrue="{!v.showJobDetail}">
+        <div class="slds-p-around--medium">
+            <span class="slds-align--absolute-center slds-text-heading--large"> {!v.jobApplication.Name}</span>
+            <lightning:button class="slds-float--right slds-p slds-p-left--xx-large slds-p-right--xx-large" variant="success" label="Apply" title="Success" onclick="{!c.handleApplyJob}"/>
+        </div>
+        <div class="slds-p-around--medium">
+            <div class="slds-align--absolute-center">
+                <span class="slds-p-right--medium">
+                    <lightning:icon iconName="utility:case" size="x-small"/>
+                    <b>{!v.jobApplication.Job_Type__c}</b>
+                </span>
+                <span class="slds-p-right--medium">
+                    <lightning:icon iconName="utility:moneybag" size="x-small"/>
+                    <b>{!if(empty(v.jobApplication.Job_Compensation__c), 'Not Disclosed' ,v.jobApplication.Job_Compensation__c)}</b>
+                </span>
+            </div>
+        </div>
+        
+        <hr/>
+        
+        <div class="slds-p-around--medium">
+            <ui:outputRichText class="slds-text-longform" value="{!v.jobApplication.Job_Description__c}"/>
+        </div>
+        
+        <aura:set attribute="else">
+            <div class="slds-p-around--medium">
+                <a class="slds-p-around--small" onclick="{!c.handleJobRedirect}">
+                	{!v.jobApplication.Job_Number__c} : {!v.jobApplication.Name}
+                </a>
+                <div class="c-container">
+                    <lightning:layout multipleRows="true">
+                        <lightning:layoutItem size="12" padding="around-small">
+                            PERSONAL INFO
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:input aura:id="fieldId" name="candidateName" required="true" value="{!v.candidate.Name}" label="Name" />
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:input aura:id="fieldId" name="candidateEmail" type="email" required="true" value="{!v.candidate.SFDC_Candidate_Email__c}" label="Email" pattern="{!$Label.c.EmailRegex}" messageWhenPatternMismatch="Please enter a valid email."/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:input aura:id="fieldId" name="candidatePhone" type="tel" required="true" value="{!v.candidate.Preferred_Phone__c}" label="Phone" pattern="[0-9]{10}" messageWhenPatternMismatch="Please enter a valid Phone Number. Only numbers are acceptable."/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="3" padding="around-small">
+                            <lightning:select name="candidateGender" label="Gender" value="{!v.candidate.Gender__c}">
+                                <option value="">--Choose--</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </lightning:select>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:input aura:id="fieldId" required="true" label="Target Hourly Rate" type="number" formatter="currency" value="{!v.candidate.Target_Hourly_Rate__c}" step="0.01"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="3" padding="around-small">
+                            <lightning:select name="candidateAuthorization" label="Authorized to work in Canada?" value="{!v.candidate.Candidate_US_work_authorization__c}">
+                                <option value="">--Choose--</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </lightning:select>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:textarea name="candidateAddress" label="Address" value="{!v.candidate.SFDC_Candidate_Address__c}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                <div class="c-container">
+                    <lightning:layout multipleRows="true">
+                        <lightning:layoutItem size="12" padding="around-small">
+                            OTHER INFO
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:input name="candidateEmployer" value="{!v.candidate.Current_Employer__c}" label="Current Employer" />
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:input name="candidateNoticePeriod" type="number" value="{!v.candidate.Notice_Period_in_days__c}" label="Notice Period(in days)" />
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="6" padding="around-small">
+                            <lightning:select name="candidateEducation" label="Education" value="{!v.candidate.Education__c}">
+                                <option value="">--Choose--</option>
+                                <option value="2 year college">2 year college</option>
+                                <option value="4 year college">4 year college</option>
+                                <option value="Masters">Masters</option>
+                                <option value="Doctorate">Doctorate</option>
+                            </lightning:select>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                <div class="c-container">
+                    <lightning:layout multipleRows="true">
+                        <lightning:layoutItem size="12" padding="around-small">
+                            RESUME
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="7" padding="around-small">
+                            <lightning:inputRichText value="{!v.candidate.Resume__c}"/>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="3" padding="around-small">
+                        	<lightning:input aura:id="fuploader" name="Resume" type="file" label="Attach Resume" multiple="False" accept=".doc, .docm, .docx, .pdf, .txt"  onchange="{!c.handleFilesChange}" />
+                            <div class="slds-text-body_small">{!v.fileName} </div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+				
+				<div>
+                	<lightning:button class ="slds-p-left--xx-large slds-p-right--xx-large slds-align--absolute-center" variant="success" label="Submit" title="Success" onclick="{!c.handleSubmitApplication}"/>
+                </div>                
+            </div>
+        </aura:set>
+    </aura:if>
+    
+    <!--<center><ui:spinner aura:id="spinner"/></center>-->
+    <aura:if isTrue="{!v.showSpinner}" >
+        <div class="exampleHolder">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+</aura:component>

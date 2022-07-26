@@ -1,0 +1,40 @@
+<aura:component controller="JobListingController"
+                implements="forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" access="global">
+
+    <!-- Attributes -->
+    <aura:attribute name="referenceId" type="String"/>
+    <aura:attribute name="reference" type="SFDC_Candidate_Reference__c"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }" />
+    
+    <!-- Markup -->
+    <div class="slds-p-around--medium">
+        <div class="slds-text-heading--medium">
+            Candidate Name: {!v.reference.Candidate__r.Name} <br/>
+            Position Applied: {!v.reference.Candidate__r.Position__c}
+        </div>
+    	<div class="c-container">
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem size="12" padding="around-small">
+                	DESCRIBE YOUR RELATIONSHIP WITH THE CANDIDATE, THEIR AREAS OF EXPERTISE AND PERFORMANCE HISTORY
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" padding="around-small">
+                    <lightning:textarea aura:id="fieldId" name="candidateReview" value="{!v.reference.Candidate_Review__c}" required="true"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        
+        <div>
+            <lightning:button class ="slds-p-left--xx-large slds-p-right--xx-large slds-align--absolute-center" variant="success" label="Submit" title="Submit" onclick="{!c.handleSubmitReferences}"/>
+        </div> 
+        
+    </div>
+    <aura:if isTrue="{!v.showSpinner}" >
+        <div class="exampleHolder">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+    
+</aura:component>

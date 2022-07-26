@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>2 year college</masterLabel>
+            <translation><!-- 2 year college --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 year college</masterLabel>
+            <translation><!-- 4 year college --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Degree in Progress - BS</masterLabel>
+            <translation><!-- Degree in Progress - BS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Degree in Progress - MS</masterLabel>
+            <translation><!-- Degree in Progress - MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctorate</masterLabel>
+            <translation><!-- Doctorate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High School</masterLabel>
+            <translation><!-- High School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masters</masterLabel>
+            <translation><!-- Masters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional (MD, JD, CPA)</masterLabel>
+            <translation><!-- Professional (MD, JD, CPA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Training</masterLabel>
+            <translation><!-- Technical Training --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

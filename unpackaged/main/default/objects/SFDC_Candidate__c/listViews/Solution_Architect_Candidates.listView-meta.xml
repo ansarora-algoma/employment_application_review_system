@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Architect_Candidates</fullName>
+    <columns>Application_Status__c</columns>
+    <columns>NAME</columns>
+    <columns>Position__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Position__c</field>
+        <operation>equals</operation>
+        <value>Solution Architect</value>
+    </filters>
+    <filters>
+        <field>Application_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Offer Accepted,Offer Declined,Rejected</value>
+    </filters>
+    <label>Solution Architect Candidates</label>
+</ListView>

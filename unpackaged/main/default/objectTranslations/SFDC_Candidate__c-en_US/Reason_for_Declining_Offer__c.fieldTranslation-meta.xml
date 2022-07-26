@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Reason for Declining Offer --></label>
+        <name>Reason_for_Declining_Offer__c</name>
+        <picklistValues>
+            <masterLabel>Compensation too low</masterLabel>
+            <translation><!-- Compensation too low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested in the position</masterLabel>
+            <translation><!-- Not interested in the position --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took another job</masterLabel>
+            <translation><!-- Took another job --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

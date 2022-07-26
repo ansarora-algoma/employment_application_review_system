@@ -1,0 +1,75 @@
+<aura:component controller="JobListingController"
+                implements="forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" access="global">
+	
+    <!-- Attributes -->
+    <aura:attribute name="candidateId" type="String"/>
+    <aura:attribute name="reference" type="SFDC_Candidate_Reference__c[]"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }" />
+    
+    <!-- Markup -->
+    <div class="slds-p-around--medium">
+       	<div class="c-container">
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem size="12" padding="around-small">
+                	REFERENCE#1
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referenceName" required="true" value="{!v.reference[0].Name__c}" label="Name" maxlength="255"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referenceEmail" type="email" required="true" value="{!v.reference[0].Email__c}" label="Email"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referencePhone" type="tel" required="true" value="{!v.reference[0].Phone__c}" label="Phone"  pattern="[0-9]{10}"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        
+        <div class="c-container">
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem size="12" padding="around-small">
+                	REFERENCE#2
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referenceName" required="true" value="{!v.reference[1].Name__c}" label="Name" maxlength="255"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referenceEmail" type="email" required="true" value="{!v.reference[1].Email__c}" label="Email"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referencePhone" type="tel" required="true" value="{!v.reference[1].Phone__c}" label="Phone"  pattern="[0-9]{10}"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        
+        <div class="c-container">
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem size="12" padding="around-small">
+                	REFERENCE#3
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referenceName" required="true" value="{!v.reference[2].Name__c}" label="Name" maxlength="255"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referenceEmail" type="email" required="true" value="{!v.reference[2].Email__c}" label="Email"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <lightning:input aura:id="fieldId" name="referencePhone" type="tel" required="true" value="{!v.reference[2].Phone__c}" label="Phone"  pattern="[0-9]{10}"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        
+        <div>
+            <lightning:button class ="slds-p-left--xx-large slds-p-right--xx-large slds-align--absolute-center" variant="success" label="Submit" title="Submit" onclick="{!c.handleSubmitReferences}"/>
+        </div> 
+        
+    </div>
+    <aura:if isTrue="{!v.showSpinner}" >
+        <div class="exampleHolder">
+            <lightning:spinner alternativeText="Loading" size="large" />
+        </div>
+    </aura:if>
+</aura:component>

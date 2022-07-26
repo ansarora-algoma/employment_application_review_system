@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Employment Application Review System.Content:Is Cover Letter Required For All The Applications?</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Is Cover Letter Required For All The Applications?</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>A cover letter is required for faculty positions.
+
+A cover letter is not required for other positions, but we recommend including one as it helps us get to know you better.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Employment Application Review System.Content:What Other Ways Can I Submit My Resume/cover Letter?</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>What Other Ways Can I Submit My Resume/cover Letter?</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>External applications are only accepted via e-mail people.culture@algomau.ca</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Employment Application Review System.Content:When Are New Job Positions Posted On The Website?</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>When Are New Job Positions Posted On The Website?</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>New non-union positions are posted on Algoma University website on a regular basis. Union positions are also posted on the website after it has been determined that there are no qualified internal applicants.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Employment Application Review System.Featured:Is Cover Letter Required For All The Applications?</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Is Cover Letter Required For All The Applications?</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>A cover letter is required for faculty positions.
+
+A cover letter is not required for other positions, but we recommend including one as it helps us get to know you better.</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Employment Application Review System.Featured:What Other Ways Can I Submit My Resume/cover Letter?</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>What Other Ways Can I Submit My Resume/cover Letter?</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>External applications are only accepted via e-mail people.culture@algomau.ca</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Employment Application Review System.Featured:When Are New Job Positions Posted On The Website?</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>When Are New Job Positions Posted On The Website?</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>New non-union positions are posted on Algoma University website on a regular basis. Union positions are also posted on the website after it has been determined that there are no qualified internal applicants.</topicDescription>
+    </managedTopic>
+</ManagedTopics>

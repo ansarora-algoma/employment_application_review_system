@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backend_Developer</fullName>
+    <columns>NAME</columns>
+    <columns>Position__c</columns>
+    <columns>Target_Hourly_Rate__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Position__c</field>
+        <operation>equals</operation>
+        <value>Backend Developer</value>
+    </filters>
+    <label>Backend Developer</label>
+</ListView>

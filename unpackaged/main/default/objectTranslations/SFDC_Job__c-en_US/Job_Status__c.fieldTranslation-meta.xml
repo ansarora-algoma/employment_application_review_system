@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Job Status --></label>
+        <name>Job_Status__c</name>
+        <picklistValues>
+            <masterLabel>00-Draft</masterLabel>
+            <translation><!-- 00-Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01-Open</masterLabel>
+            <translation><!-- 01-Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02-Sourcing</masterLabel>
+            <translation><!-- 02-Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03-Interviewing</masterLabel>
+            <translation><!-- 03-Interviewing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04-Offer Negotiation</masterLabel>
+            <translation><!-- 04-Offer Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05-Routing Offer</masterLabel>
+            <translation><!-- 05-Routing Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06-Offer Sent</masterLabel>
+            <translation><!-- 06-Offer Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07-Offer Accepted</masterLabel>
+            <translation><!-- 07-Offer Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08-Filled</masterLabel>
+            <translation><!-- 08-Filled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09-On Hold</masterLabel>
+            <translation><!-- 09-On Hold --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

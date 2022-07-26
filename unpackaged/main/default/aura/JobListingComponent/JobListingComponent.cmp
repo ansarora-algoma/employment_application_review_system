@@ -1,0 +1,62 @@
+<aura:component controller="JobListingController" 
+                implements="forceCommunity:availableForAllPageTypes" access="global">
+	
+    <!-- Attributes -->
+    <aura:attribute name="AllJobListings" type="List" />
+    <aura:attribute name="backupAllJobListings" type="List" />
+    <aura:attribute name="searchString" type="String" />
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{! this }" action="{! c.init }" />
+    <aura:handler event="aura:doneWaiting" action="{! c.hideSpinner }" />
+    
+    <!-- Search component -->
+    <div class="slds-p-around--medium">
+        <lightning:input
+            name="job-search"
+            label="This is a search input with a hidden label. The label is still required for accessibility reasons"
+            type="search"
+            variant="label-hidden"
+            placeholder="Search for Jobs"
+            onkeyup="{! c.handleKeyUp}"
+            value="{!v.searchString}"             
+        />
+    </div>
+    
+    <div class="slds-p-around--medium">
+    	<span class="slds-float--right "><b>Found {!v.AllJobListings.length} Jobs</b></span>
+    </div>
+    <div class="slds-p-around--medium">
+        <!-- Markup -->
+        <aura:iteration items="{! v.AllJobListings }" var="eachListing" >
+            <lightning:card>
+                <aura:set attribute="title">
+                   <a onclick="{!c.handleJobClick}" data-jobid="{!eachListing.Id}">
+            			{! eachListing.Name } 
+				   </a>
+                </aura:set>
+                
+                <div class="slds-p-around--medium">
+                    <span class="slds-p-right--medium">
+                        <lightning:icon iconName="utility:case" size="x-small"/>
+                        <b>{!eachListing.Job_Type__c}</b>
+                    </span>
+                    <span class="slds-p-right--medium">
+                        <lightning:icon iconName="utility:moneybag" size="x-small"/>
+                        <b>{!if(empty(eachListing.Job_Compensation__c), 'Not Disclosed' ,eachListing.Job_Compensation__c)}</b>
+                    </span>
+                </div>
+                
+                <div class="slds-p-around--medium">
+                    {! eachListing.Job_Overview__c }
+                </div>
+            </lightning:card>
+            
+            <br/>
+        </aura:iteration>
+        
+    </div>
+    
+    <center><ui:spinner aura:id="spinner"/></center>
+    
+</aura:component>

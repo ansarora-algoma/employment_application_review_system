@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>AlgomaU</letterhead>
+    <name>New Candidate</name>
+    <style>freeForm</style>
+    <subject>Thank You for Applying at Algoma University</subject>
+    <textOnly>Hi {!SFDC_Candidate__c.SFDC_Candidate_Name__c},
+
+We have received your application for the position: &#39;{!SFDC_Candidate__c.Position__c}&#39;.
+
+Thank you for your interest in Algoma University! We are currently in the middle of our recruitment process and initial screening should be completed soon. We will keep you informed throughout the process.
+
+Thank you!
+AlgomaU recruitment team.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
